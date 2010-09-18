@@ -43,4 +43,13 @@ following call on the command line:
 
 ### Further Information ###
 
-I wrote a blog post about XmlTidy and you can read it [here](). 
+I wrote a blog post about XmlTidy and you can read it
+[here](http://blog.theblinkingcursor.org/2010/09/tidy-up-your-xml-files.html). You
+can run the rss and atom feed files under the `samples` folder through XmlTidy
+to see how it works. Right after you run the build script, here is a how you
+can test it:
+
+    .\bin\xmltidy.exe -v -b .\samples\blog.theblinkingcursor.org.atom.xml .\samples\esr.ibiblio.org.rss.xml .\samples\www.codinghorror.com.atom.xml
+
+The above will echo verbose output, backup the files, and then process each
+file in turn.
