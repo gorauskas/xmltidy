@@ -1,4 +1,6 @@
 bin/*
+*.dll
+*.pdb
 *.csproj.user
 *.suo
 *.cache
