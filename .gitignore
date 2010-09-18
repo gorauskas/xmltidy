@@ -1,0 +1,7 @@
+bin/*
+*.csproj.user
+*.suo
+*.cache
+*~
+\#*#
+.#*
