@@ -17,8 +17,19 @@ more fun to write your own.
 
 There are two main requirements for this tool to work:
 
-1. **Mono.Options** - Can be found here: 
+1. **Mono.Options** - Find more about it [here](http://tirania.org/blog/archive/2008/Oct-14.html) and [here](http://www.ndesk.org/Options). 
 2. **LINQ to XML** - Or more precisely, the System.Xml.Linq namespace.
 
 ## How it Works ##
 
+After you compile the source, working with XmlTidy is as simple as making the
+following call on the command line:
+
+    xmltidy myxmlfile.xml
+
+### Command Line Options ###
+
+
+### Further Information ###
+
+I wrote a blog post about XmlTidy and you can read it [here](). 
