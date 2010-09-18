@@ -28,11 +28,10 @@ namespace XmlTidy
         {
           if (backup)
           {
-            Debug("Backup file: {0}", file);
-            File.Copy(file, Path.Combine(file, ".original"));
+            Debug("Backup file: {0}", file + ".original");
+            File.Copy(file, file + ".original");
           }
 
-          Debug("Tidy up file: {0}", file);
           XmlTidy(file);
         }
       } 
@@ -44,10 +43,13 @@ namespace XmlTidy
       {
         Console.WriteLine("Error: {0}", e.Message);
       }
+
+      Debug("Done!");
     }
 
     static void XmlTidy(string filename) 
     {
+      Debug("Tidy up file: {0}", filename);      
       var doc = XDocument.Load(filename);
       doc.Save(filename, SaveOptions.None);
     }
