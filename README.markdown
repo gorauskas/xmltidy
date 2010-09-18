@@ -13,7 +13,7 @@ files into a human-readable output.
 There probably are other tools out that that achieve the same, but it's always
 more fun to write your own. 
 
-## Requirements ## 
+## Requirements ##
 
 There are two main requirements for this tool to work:
 
@@ -29,6 +29,17 @@ following call on the command line:
 
 ### Command Line Options ###
 
+    C:\>xmltidy.exe -?
+    
+    Usage: xmltidy.exe [OPTIONS]* [FILENAME]+
+    Properly formats and indents a valid XML file. At least one
+    valid xml file name is expected. No options are required.
+    
+    Options:
+      -?, -h, --help             Show this help message and exit.
+      -V, --version              Show version information and exit.
+      -v, --verbose              Increase message verbosity.
+      -b, --backup               Make a copy of input before tidying it.
 
 ### Further Information ###
 
