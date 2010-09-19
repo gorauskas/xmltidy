@@ -18,8 +18,12 @@ always more fun to write your own.
 There are two main requirements for this tool to work:
 
 1. **Mono.Options** - Find more about it
-[here](http://tirania.org/blog/archive/2008/Oct-14.html) and
-[here](http://www.ndesk.org/Options). 
+   [here](http://tirania.org/blog/archive/2008/Oct-14.html) and
+   [here](http://www.ndesk.org/Options). 
+--What I have been doing is to compile the sources for Mono.Option on the
+   target platform (.Net 4 or Mono 2.6.7) and copying the respective assemblies to
+   a dotnet or mono folder respectively. The build scripts use those folders to
+   build XmlTidy.
 2. **LINQ to XML** - Or more precisely, the System.Xml.Linq namespace.
 
 ## How it Works ##
