@@ -1,4 +1,6 @@
 bin/*
+dotnet/*
+mono/*
 *.dll
 *.pdb
 *.csproj.user
