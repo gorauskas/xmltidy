@@ -19,11 +19,11 @@ There are two main requirements for this tool to work:
 
 1. **Mono.Options** - Find more about it
    [here](http://tirania.org/blog/archive/2008/Oct-14.html) and
-   [here](http://www.ndesk.org/Options). 
-   - What I have been doing is to compile the sources for Mono.Option on the
-     target platform (.Net 4 or Mono 2.6.7) and copying the respective assemblies to
-     a dotnet or mono folder respectively. The build scripts use those folders to
-     build XmlTidy.
+   [here](http://www.ndesk.org/Options).  
+   - What I have been doing is to
+     compile the sources for Mono.Options on the target platform (.Net 4 or Mono
+     2.6.7) and copying the respective assemblies to a dotnet or mono folder
+     respectively. The build scripts use those folders to build XmlTidy.
 2. **LINQ to XML** - Or more precisely, the System.Xml.Linq namespace.
 
 ## How it Works ##
@@ -50,12 +50,14 @@ following call on the command line:
 ### Further Information ###
 
 I wrote a blog post about XmlTidy and you can read it
-[here](http://blog.theblinkingcursor.org/2010/09/tidy-up-your-xml-files.html). You
-can run the rss and atom feed files under the `samples` folder through XmlTidy
-to see how it works. Right after you run the build script, here is a how you
-can test it:
+[here](http://blog.theblinkingcursor.org/2010/09/tidy-up-your-xml-files.html). The
+post goes into how XmlTidy works internally. You can run the rss and atom feed
+files under the `samples` folder through XmlTidy to see the results. Right
+after you run the build script, here is a how you can test it:
 
     .\bin\xmltidy.exe -v -b .\samples\blog.theblinkingcursor.org.atom.xml .\samples\esr.ibiblio.org.rss.xml
 
 The above will echo verbose output, backup the files, and then process each
-file in turn.
+file in turn. I have run XmlTidy on Windows 7 with .NET 4 and on Ubuntu 10.04
+with Mono 2.6.7
+
