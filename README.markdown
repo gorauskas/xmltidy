@@ -17,7 +17,9 @@ always more fun to write your own.
 
 There are two main requirements for this tool to work:
 
-1. **Mono.Options** - Find more about it [here](http://tirania.org/blog/archive/2008/Oct-14.html) and [here](http://www.ndesk.org/Options). 
+1. **Mono.Options** - Find more about it
+[here](http://tirania.org/blog/archive/2008/Oct-14.html) and
+[here](http://www.ndesk.org/Options). 
 2. **LINQ to XML** - Or more precisely, the System.Xml.Linq namespace.
 
 ## How it Works ##

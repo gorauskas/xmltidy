@@ -7,10 +7,10 @@ REM or properly set the variable MYCSC below.
 if exist .\bin goto BUILD
 echo Create build output directory .\bin
 md .\bin
-copy .\Mono.Options.dll .\bin\Mono.Options.dll
-copy .\Mono.Options.pdb .\bin\Mono.Options.pdb
 
 :BUILD
+copy .\dotnet\Mono.Options.dll .\bin\Mono.Options.dll
+copy .\dotnet\Mono.Options.pdb .\bin\Mono.Options.pdb
 echo Start program build
 
 csc /t:exe /out:.\bin\xmltidy.exe /debug+ /nologo /w:4 /r:Mono.Options.dll *.cs
