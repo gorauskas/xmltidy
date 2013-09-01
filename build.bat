@@ -13,7 +13,7 @@ copy .\dotnet\Mono.Options.dll .\bin\Mono.Options.dll
 copy .\dotnet\Mono.Options.pdb .\bin\Mono.Options.pdb
 echo Start program build
 
-csc /t:exe /out:.\bin\xmltidy.exe /debug+ /nologo /w:4 /r:Mono.Options.dll *.cs
+csc /t:exe /out:.\bin\xmltidy.exe /debug+ /nologo /w:4 /r:.\dotnet\Mono.Options.dll *.cs
 
 echo DONE! Run .\bin\xmltidy.exe --help for usage
 echo .
