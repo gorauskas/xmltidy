@@ -14,7 +14,7 @@ echo "Start program build"
 
 cp ./mono/Mono.Options.dll ./bin/Mono.Options.dll
 cp ./mono/Mono.Options.pdb ./bin/Mono.Options.pdb
-gmcs -pkg:dotnet /r:System.Xml.Linq.dll /r:./bin/Mono.Options.dll /nologo /out:./bin/xmltidy.exe AssemblyInfo.cs Program.cs
+mcs -pkg:dotnet /r:System.Xml.Linq.dll /r:./bin/Mono.Options.dll /nologo /out:./bin/xmltidy.exe AssemblyInfo.cs Program.cs
 
 echo "DONE! Run mono ./bin/xmltidy.exe --help for usage"
 echo "."
